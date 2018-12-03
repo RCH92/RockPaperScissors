@@ -1,0 +1,234 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+#title {
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  /* background: -webkit-radial-gradient(center, #dc143c, #580818);
+  background: -moz-radial-gradient(center, #dc143c, #580818);
+  background: -o-radial-gradient(center, #dc143c, #580818);
+  background: -ms-radial-gradient(center, #dc143c, #580818);
+  background: radial-gradient(center, #dc143c, #580818); */
+  height: 400px;
+}
+.slashed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+.slashed .top,
+.slashed .bot {
+  text-align: center;
+  font: 62px/100px arial;
+  text-transform: uppercase;
+  text-align: center;
+  overflow: hidden;
+  color: #fff;
+}
+.slashed .top:before,
+.slashed .bot:before {
+  content: attr(title);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+.slashed .top {
+  position: fixed;
+  top: 0;
+  left: 38px;
+  right: 0;
+  bottom: 68%;
+  color: crimson;
+}
+.slashed .top:before {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+}
+.slashed .bot {
+  position: fixed;
+  top:32%;
+  left: 0;
+  right: -45px;
+  bottom: 0;
+  color: crimson;
+  z-index: 0;
+}
+.slashed .bot:before {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+}
+
+body {
+    background: slategray;
+}
+
+.clearfix {
+    display: block;
+    content: "";
+    clear: both;
+    }
+
+#wrapper{
+    width: 70%;
+    margin: auto;
+    background: lightgreen;
+    text-align: center;
+    height: 100%;
+    min-width: 845px;
+    /* display: flex; */
+
+}
+#rules {
+    text-align: center;
+    margin-top: 5%;
+}
+#rock {
+    width: 200px;
+    height: 200px;
+    
+    
+    
+}
+#paper {
+    width: 200px;
+    
+    
+}
+#scisor {
+    width: 200px;
+    
+    
+    
+}
+#selectionImages {
+    display: flex;
+    z-index: 1000;
+    
+    margin: 10px 0px;
+    justify-content: space-evenly;
+   
+}
+
+#titleBox {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    
+}
+h1 {
+    font-size: 3rem;
+    color:rgb(0, 0, 0);
+    
+}
+#Trock {
+    color: rgb(136, 70, 50);
+}
+#Tpaper {
+    color: white;
+    
+}
+#Tscisor{
+    color: silver;
+}
+#resultWrapper {
+    background: rgb(236, 236, 236);
+    height: 500px;
+    width: 500px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+#resultImages{
+    height: 500px;
+    width: 500px;
+    /* background: white; */
+   
+    background-size: cover;
+    margin: auto;
+}
+.rockSelected {
+    background-image: url('../images/RockLarger.png');
+}
+.paperSelected {
+    background-image: url('../images/paper.png');
+}
+.scisorSelected {
+    background-image: url('../images/Scisors.png');
+}
+.rockWin {
+    background-image: url('../images/RockBeatScisor.png');
+}
+.paperWin {
+    background-image: url('../images/PaperBeatRock.png');
+}
+.scisorWin {
+    background-image: url('../images/ScisorBeatPaper.png');
+}
+#resultText {
+   
+    margin-top: 30px;
+    justify-self: center;
+    text-align: center;
+   
+}
+.hide {
+    visibility: hidden; 
+}
+#startScreen {
+display: flex;
+justify-content: center;
+height: 100%;
+align-items: center;
+
+}
+.titleBox {
+    text-align: center;
+    background: honeydew;
+    padding: 20px;
+}
+.aside {
+    width: 300px;
+    max-width: 300px;
+    min-width: 150px;
+    border: black 2px solid;
+    height: 500px;
+    margin: 0px 10px;
+    
+    
+    
+}
+#middleDiv {
+    display: flex;
+    justify-content: space-evenly;
+}
+.timer {
+    width: 200px;
+    min-width: 100px;
+    height: 150px;
+    border: black 2px solid;
+    margin: 25px 10px;
+    
+    justify-content: center;
+    font-size: 100px;
+    font-weight: unset;
+}
+p {
+    margin: 25px 0px;
+}
